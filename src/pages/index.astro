@@ -1,11 +1,84 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import Card from "../components/Card.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const devs = [
+  {
+    imagen: "/images/angel.jpg",
+    nombreDev: "Angel AFL",
+    descripcion: `Ing. Software Multiplataforma, especializado en desarrollo web y
+        desarrollo de apps móviles android/ios`,
+    tecnologias: [
+      "/images/javaScript.png",
+      "/images/flutter.png",
+      "/images/react.png",
+      "/images/tailwindcss.png",
+    ],
+  },
+  {
+    imagen: "/images/angel.jpg",
+    nombreDev: "Angel AFL",
+    descripcion: `Ing. Software Multiplataforma, especializado en desarrollo web y
+        desarrollo de apps móviles android/ios`,
+    tecnologias: [
+      "/images/javaScript.png",
+      "/images/flutter.png",
+      "/images/react.png",
+      "/images/tailwindcss.png",
+    ],
+  },
+  {
+    imagen: "/images/angel.jpg",
+    nombreDev: "Angel AFL",
+    descripcion: `Ing. Software Multiplataforma, especializado en desarrollo web y
+        desarrollo de apps móviles android/ios`,
+    tecnologias: [
+      "/images/javaScript.png",
+      "/images/flutter.png",
+      "/images/react.png",
+      "/images/tailwindcss.png",
+    ],
+  },
+  {
+    imagen: "/images/angel.jpg",
+    nombreDev: "Angel AFL",
+    descripcion: `Ing. Software Multiplataforma, especializado en desarrollo web y
+        desarrollo de apps móviles android/ios`,
+    tecnologias: [
+      "/images/javaScript.png",
+      "/images/flutter.png",
+      "/images/react.png",
+      "/images/tailwindcss.png",
+    ],
+  },
+  {
+    imagen: "/images/angel.jpg",
+    nombreDev: "Angel AFL",
+    descripcion: `Ing. Software Multiplataforma, especializado en desarrollo web y
+        desarrollo de apps móviles android/ios`,
+    tecnologias: [
+      "/images/javaScript.png",
+      "/images/flutter.png",
+      "/images/react.png",
+      "/images/tailwindcss.png",
+    ],
+  },
+];
 ---
 
 <Layout title="inicio">
   <Header />
+  <div class="flex flex-wrap">
+    {
+      devs.map((item) => (
+        <Card
+          imagen={item.imagen}
+          nombreDev={item.nombreDev}
+          descripcion={item.descripcion}
+          tecnologias={item.tecnologias}
+        />
+      ))
+    }
+  </div>
 </Layout>
