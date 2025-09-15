@@ -1,0 +1,25 @@
+---
+export interface Props {
+  heading: string;
+  subheading: string;
+  imagen: string;
+}
+
+const { heading, subheading, imagen } = Astro.props;
+const styleSection =
+  "lg:h-[800px] bg-gradient-to-r from-blue-400 via-blue-300 to-blue-400 my-16";
+---
+
+<section class={styleSection}>
+  <div class="flex flex-col md:flex-row h-full">
+    <img class="md:w-1/2" src={imagen} alt="imagen con texto" />
+    <div class="md:w-1/2 flex flex-col justify-center items-center p-16">
+      <h3 class="font-bold text-center text-4xl text-white">
+        {heading}
+      </h3>
+      <h3 class="mt-8 font-light text-center text-2xl text-white">
+        {subheading}
+      </h3>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+---
+export interface Props {
+  heading?: string;
+  subheading?: string;
+}
+
+const { heading, subheading } = Astro.props;
+
+const styleSection =
+  "w-full h-[800px] my-16 p-16 flex flex-col items-center justify-center my-4 bg-gradient-to-r from-pink-600 via-purple-700 to-blue-600";
+---
+
+<section class={styleSection}>
+  <h2 class="text-center text-4xl font-bold text-white">
+    {heading}
+  </h2>
+  <p class="text-center text-2xl font-light text-white mt-16">
+    {subheading}
+  </p>
+  <button
+    class="mt-16 border p-4 rounded-2xl text-white cursor-pointer transition duration-500 hover:text-black"
+    >Contáctanos</button
+  >
+</section>

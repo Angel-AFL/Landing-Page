@@ -4,6 +4,8 @@ import Header from "../components/Header.astro";
 import Card from "../components/Card.astro";
 import TitleSection from "../components/TitleSection.astro";
 import Banner from "../components/Banner.astro";
+import SectionInfo from "../components/SectionInfo.astro";
+import ImageWithText from "../components/ImageWithText.astro";
 
 const devs = [
   {
@@ -76,6 +78,11 @@ const devs = [
 <Layout title="inicio">
   <Header />
   <Banner />
+  <ImageWithText
+    heading="Proyectos responsivos y multiplaforma"
+    subheading="Computadoras, Tablets y Móviles"
+    imagen="/images/image-with-text.jpg"
+  />
   <TitleSection
     heading="Nuestro equipo"
     subheading="Conóce a nuestro equipo de desarrollo de software"
@@ -92,4 +99,10 @@ const devs = [
       ))
     }
   </div>
+
+  <SectionInfo
+    heading="Crea tu proyecto con nosotros"
+    subheading=`Garantizamos eficiencia, escalabilidad, responsividad y transparencia a un
+    precio justo, sea cual sea tu proyecto`
+  />
 </Layout>
