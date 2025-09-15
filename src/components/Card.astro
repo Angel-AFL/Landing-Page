@@ -9,8 +9,12 @@ export interface Props {
 const { imagen, nombreDev, descripcion, tecnologias = [] } = Astro.props;
 ---
 
-<div class="shadow-lg p-6 w-72 lg:w-92 rounded-2xl mt-5 m-auto">
-  <img class="m-auto rounded-4xl" src={imagen} alt="Card-dev" />
+<div class="shadow-xl p-6 w-72 lg:w-92 rounded-2xl my-5 m-auto">
+  <img
+    class="m-auto rounded-4xl w-[240px] h-[290px] lg:w-[320px] lg:h-[400px]"
+    src={imagen}
+    alt="Card-dev"
+  />
   <div class="mt-4">
     <h2 class="font-bold text-lg mb-2">{nombreDev}</h2>
     <p>{descripcion}</p>

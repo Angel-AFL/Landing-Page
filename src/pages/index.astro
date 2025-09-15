@@ -2,15 +2,45 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Card from "../components/Card.astro";
+import TitleSection from "../components/TitleSection.astro";
+import Banner from "../components/Banner.astro";
 
 const devs = [
   {
     imagen: "/images/angel.jpg",
     nombreDev: "Angel AFL",
+    descripcion: `TSU. Software Multiplataforma, especializado en desarrollo web y
+        desarrollo de apps móviles android/ios`,
+    tecnologias: [
+      "/images/javascript.png",
+      "/images/flutter.png",
+      "/images/react.png",
+      "/images/tailwindcss.png",
+      "/images/astro.png",
+      "/images/nodejs.png",
+      "/images/laravel.png",
+      "/images/mysql.png",
+    ],
+  },
+  {
+    imagen: "/images/cindi.jpg",
+    nombreDev: "Cindi YPC",
     descripcion: `Ing. Software Multiplataforma, especializado en desarrollo web y
         desarrollo de apps móviles android/ios`,
     tecnologias: [
-      "/images/javaScript.png",
+      "/images/typescript.png",
+      "/images/firebase.png",
+      "/images/react.png",
+      "/images/tailwindcss.png",
+    ],
+  },
+  {
+    imagen: "/images/angel.jpg",
+    nombreDev: "Angel AFL",
+    descripcion: `Ing. Software Multiplataforma, especializado en desarrollo web y
+        desarrollo de apps móviles android/ios`,
+    tecnologias: [
+      "/images/javascript.png",
       "/images/flutter.png",
       "/images/react.png",
       "/images/tailwindcss.png",
@@ -22,7 +52,7 @@ const devs = [
     descripcion: `Ing. Software Multiplataforma, especializado en desarrollo web y
         desarrollo de apps móviles android/ios`,
     tecnologias: [
-      "/images/javaScript.png",
+      "/images/javascript.png",
       "/images/flutter.png",
       "/images/react.png",
       "/images/tailwindcss.png",
@@ -34,31 +64,7 @@ const devs = [
     descripcion: `Ing. Software Multiplataforma, especializado en desarrollo web y
         desarrollo de apps móviles android/ios`,
     tecnologias: [
-      "/images/javaScript.png",
-      "/images/flutter.png",
-      "/images/react.png",
-      "/images/tailwindcss.png",
-    ],
-  },
-  {
-    imagen: "/images/angel.jpg",
-    nombreDev: "Angel AFL",
-    descripcion: `Ing. Software Multiplataforma, especializado en desarrollo web y
-        desarrollo de apps móviles android/ios`,
-    tecnologias: [
-      "/images/javaScript.png",
-      "/images/flutter.png",
-      "/images/react.png",
-      "/images/tailwindcss.png",
-    ],
-  },
-  {
-    imagen: "/images/angel.jpg",
-    nombreDev: "Angel AFL",
-    descripcion: `Ing. Software Multiplataforma, especializado en desarrollo web y
-        desarrollo de apps móviles android/ios`,
-    tecnologias: [
-      "/images/javaScript.png",
+      "/images/javascript.png",
       "/images/flutter.png",
       "/images/react.png",
       "/images/tailwindcss.png",
@@ -69,6 +75,11 @@ const devs = [
 
 <Layout title="inicio">
   <Header />
+  <Banner />
+  <TitleSection
+    heading="Nuestro equipo"
+    subheading="Conóce a nuestro equipo de desarrollo de software"
+  />
   <div class="flex flex-wrap">
     {
       devs.map((item) => (

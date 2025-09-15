@@ -1,0 +1,13 @@
+---
+export interface Props {
+  heading?: string;
+  subheading?: string;
+}
+
+const { heading, subheading } = Astro.props;
+---
+
+<div class="mt-12 mb-4 text-center">
+  <h2 class="font-normal text-2xl">"{heading}"</h2>
+  <h3 class="mt-6 font-light text-xl">{subheading}</h3>
+</div>
