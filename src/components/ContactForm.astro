@@ -1,0 +1,64 @@
+---
+
+---
+
+<section
+  class="flex flex-col md:flex-row bg-gradient-to-r from-blue-400 via-blue-300 to-blue-400 min-h-screen"
+>
+  <!-- Parte izquierda -->
+  <div class="w-full md:w-1/2 flex items-center justify-center p-6">
+    <img
+      src="https://placehold.co/500X500"
+      alt=""
+      class="max-w-full h-auto rounded-xl shadow-lg"
+    />
+  </div>
+
+  <!-- Parte derecha -->
+  <div class="w-full md:w-1/2 flex items-center justify-center p-6">
+    <form
+      class="w-full md:w-3/4 bg-gray-100 text-gray-800 text-lg rounded-2xl shadow-2xl p-10 flex flex-col items-start gap-4"
+      action=""
+    >
+      <h2 class="font-bold text-2xl text-center w-full text-blue-600">
+        Contáctanos
+      </h2>
+
+      <label for="nombre" class="w-full text-left">Nombre:</label>
+      <input
+        class="border p-3 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+        type="text"
+        name="nombre"
+        placeholder="Angel AFL"
+      />
+
+      <label for="correo" class="w-full text-left">Correo:</label>
+      <input
+        class="border p-3 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+        type="text"
+        name="correo"
+        placeholder="angel@gmail.com"
+      />
+
+      <label for="telefono" class="w-full text-left">Teléfono:</label>
+      <input
+        class="border p-3 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+        type="text"
+        name="telefono"
+        placeholder="+529997261503"
+      />
+
+      <label for="mensaje" class="w-full text-left">Mensaje:</label>
+      <textarea
+        class="border p-3 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+        name="mensaje"
+        placeholder="¡Hola! mi proyecto es..."></textarea>
+
+      <button
+        class="bg-blue-600 hover:bg-blue-700 text-white rounded-xl px-6 py-3 mt-4 w-full transition duration-300"
+      >
+        Enviar
+      </button>
+    </form>
+  </div>
+</section>
