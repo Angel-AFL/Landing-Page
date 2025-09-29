@@ -1,12 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
 import Card from "../components/Card.astro";
 import TitleSection from "../components/TitleSection.astro";
 import Banner from "../components/Banner.astro";
 import SectionInfo from "../components/SectionInfo.astro";
 import ImageWithText from "../components/ImageWithText.astro";
-import Footer from "../components/Footer.astro";
 import ContactForm from "../components/ContactForm.astro";
 import Preguntas from "../components/Preguntas.astro";
 const devs = [
@@ -79,7 +77,6 @@ const devs = [
 ---
 
 <Layout title="inicio">
-  <Header />
   <Banner />
   <ImageWithText
     heading="Proyectos responsivos y multiplaforma"
@@ -110,5 +107,4 @@ const devs = [
   />
   <Preguntas/>
   <ContactForm />
-  <Footer />
 </Layout>
