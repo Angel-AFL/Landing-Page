@@ -8,7 +8,7 @@ import SectionInfo from "../components/SectionInfo.astro";
 import ImageWithText from "../components/ImageWithText.astro";
 import Footer from "../components/Footer.astro";
 import ContactForm from "../components/ContactForm.astro";
-
+import Preguntas from "../components/Preguntas.astro";
 const devs = [
   {
     imagen: "/images/angel.jpg",
@@ -16,7 +16,7 @@ const devs = [
     descripcion: `TSU. Software Multiplataforma, especializado en desarrollo web y
         desarrollo de apps móviles android/ios`,
     tecnologias: [
-      "/images/javaScript.png",
+      "/images/javascript.png",
       "/images/flutter.png",
       "/images/react.png",
       "/images/tailwindcss.png",
@@ -67,7 +67,7 @@ const devs = [
     nombreDev: "Jesus MPE",
     descripcion: `Ing. Software Multiplataforma, especializado en desarrollo y optimizacion web y manejo de errores en apliaciones.`,
     tecnologias: [
-      "/images/javaScript.png",
+      "/images/javascript.png",
       "/images/astro.png",
       "/images/zod.webp",
       "/images/laravel.png",
@@ -108,7 +108,7 @@ const devs = [
     subheading=`Garantizamos eficiencia, escalabilidad, responsividad y transparencia a un
     precio justo, sea cual sea tu proyecto`
   />
-
+  <Preguntas/>
   <ContactForm />
   <Footer />
 </Layout>
