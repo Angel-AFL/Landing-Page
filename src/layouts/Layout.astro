@@ -5,6 +5,20 @@ export interface Props {
 }
 
 const { title = "Astro Basics" } = Astro.props;
+
+// Estilos Header
+const headerStyle =
+  "bg-gradient-to-r from-pink-600 via-purple-700 to-blue-600 text-white text-xl fixed w-full absolute top-0";
+const liStyle =
+  "hover:text-blue-400 hover:underline transition duration-300 cursor-pointer";
+const navStyle =
+  "flex flex-col flex-wrap md:flex-row justify-around items-center p-4";
+
+// Estilos Footer
+const footerStyle =
+  "md:flex p-8 pb-0 gap-8 justify-around items-start h-auto text-white bg-gradient-to-r from-pink-600 via-purple-700 to-blue-600";
+const copyrightStyle =
+  "md:flex p-8 pb-0 gap-8 justify-around items-start h-auto text-white bg-gradient-to-r from-pink-600 via-purple-700 to-blue-600";
 ---
 
 <!doctype html>
@@ -21,6 +35,84 @@ const { title = "Astro Basics" } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="font-[roboto]">
+    <header class={headerStyle}>
+      <nav class={navStyle}>
+        <div class="flex items-center gap-28">
+          <img src="https://placehold.co/50X50" alt="" />
+          <div>
+            <div class="md:hidden mt-2">
+              <i class="material-icons">menu</i>
+            </div>
+          </div>
+          <ul class="hidden md:flex lg:gap-16 md:gap-8">
+            <li class={liStyle}>Inicio</li>
+            <li class={liStyle}>Nosotros</li>
+            <li class={liStyle}>Trabajos</li>
+            <li class={liStyle}>Contácto</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
     <slot />
+
+    <footer class={footerStyle}>
+      <div>
+        <ul class="leading-8">
+          <img src="https://placehold.co/60X60" alt="" />
+          <li>Nombre de la empresa</li>
+          <li>Dirección:</li>
+          <li>Correo:</li>
+          <li>Teléfono:</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="leading-8">
+          <li class="text-lg font-bold">Acerca de</li>
+          <li>Nosotros</li>
+          <li>Trabajos</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="leading-8">
+          <li class="text-lg font-bold">Políticas</li>
+          <li>Términos y condiciones</li>
+          <li>Política de privacidad</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="leading-8">
+          <li class="text-lg font-bold">Ayuda</li>
+          <li>Preguntas frecuentes</li>
+          <li>Contácto</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="leading-8">
+          <li class="text-lg font-bold">Redes sociales</li>
+          <div class="flex gap-4 mt-4">
+            <li><img src="/images/facebook.png" alt="" /></li>
+            <li><img src="/images/instagram.png" alt="" /></li>
+            <li><img src="/images/tiktok.png" alt="" /></li>
+            <li><img src="/images/whatsapp.png" alt="" /></li>
+          </div>
+        </ul>
+      </div>
+    </footer>
+
+    <div class={copyrightStyle}>
+      <p>Todos los derechos reservados @2025</p>
+      <ul class="flex gap-4">
+        <li>
+          <img src="/images/debitcard.png" alt="" width="48" height="48" />
+        </li>
+        <li>
+          <img src="/images/transferencia.png" alt="" width="48" height="48" />
+        </li>
+        <li>
+          <img src="/images/mercado-pago.png" alt="" width="48" height="48" />
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
