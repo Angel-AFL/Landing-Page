@@ -6,7 +6,7 @@ import Banner from "../components/Banner.astro";
 import SectionInfo from "../components/SectionInfo.astro";
 import ImageWithText from "../components/ImageWithText.astro";
 import ContactForm from "../components/ContactForm.astro";
-
+import Preguntas from "../components/Preguntas.astro";
 const devs = [
   {
     imagen: "/images/angel.jpg",
@@ -63,8 +63,7 @@ const devs = [
   {
     imagen: "/images/jesus.jpg",
     nombreDev: "Jesus MPE",
-    descripcion: `Ing. Software Multiplataforma, especializado en desarrollo y optimizacion web como
-        desarrollo de apps móviles android/ios`,
+    descripcion: `Ing. Software Multiplataforma, especializado en desarrollo y optimizacion web con el manejo de errores en aplicacionese integracion de API' Ias`,
     tecnologias: [
       "/images/javascript.png",
       "/images/astro.png",
@@ -106,6 +105,6 @@ const devs = [
     subheading=`Garantizamos eficiencia, escalabilidad, responsividad y transparencia a un
     precio justo, sea cual sea tu proyecto`
   />
-
+  <Preguntas/>
   <ContactForm />
 </Layout>
